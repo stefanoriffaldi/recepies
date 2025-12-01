@@ -1,0 +1,36 @@
+# ===========================================
+# Git Ignore per Ricettario
+# ===========================================
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+.cursor/
+
+# File temporanei
+*.tmp
+*.temp
+*.bak
+
+# Log
+*.log
+
+# Dipendenze (se in futuro usi npm/node)
+node_modules/
+
+# Build output
+dist/
+build/
+
+# File locali che non vuoi pubblicare
+_drafts/
+*.local.html
+

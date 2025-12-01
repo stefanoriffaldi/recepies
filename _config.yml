@@ -1,0 +1,45 @@
+# ===========================================
+# Configurazione GitHub Pages
+# ===========================================
+# Questo file configura GitHub Pages per il sito.
+# Non è strettamente necessario per siti HTML statici,
+# ma è utile per personalizzazioni future.
+
+# Titolo del sito (usato nei metadata)
+title: Ricettario Personale
+
+# Descrizione del sito (per SEO)
+description: Raccolta di ricette personali per friggitrice ad aria e altri elettrodomestici
+
+# URL base (lascia vuoto per repository standard)
+baseurl: ""
+
+# Tema (non usato per siti HTML puri, ma utile se passi a Jekyll)
+# theme: minima
+
+# Escludi questi file dalla build
+exclude:
+  - README.md
+  - _templates/
+  - _manuali/
+  - "*.md"
+  - .gitignore
+  - .cursorignore
+  - .cursor/
+
+# Encoding
+encoding: UTF-8
+
+# ===========================================
+# Note per uso futuro con Jekyll
+# ===========================================
+# Se in futuro vuoi usare Jekyll per generare
+# automaticamente le pagine dai file .md:
+#
+# 1. Rinomina index.html in _layouts/default.html
+# 2. Crea un nuovo index.md con front matter
+# 3. Metti le ricette in una cartella _ricette/
+# 4. Jekyll genererà automaticamente il sito
+#
+# Per ora, il sito funziona come HTML statico puro.
+
