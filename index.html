@@ -359,6 +359,93 @@
             color: var(--color-sage);
         }
 
+        /* Manuali Section */
+        .manuali-section {
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 4px 30px rgba(0,0,0,0.06);
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        .manuali-section h2 {
+            font-family: var(--font-serif);
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            color: var(--color-terracotta);
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .manuali-intro {
+            text-align: center;
+            color: var(--color-warm-gray);
+            margin-bottom: 2rem;
+        }
+
+        .manuali-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .manuale-card {
+            background: linear-gradient(135deg, var(--color-cream) 0%, #fff 100%);
+            border: 2px solid var(--color-light-sage);
+            border-radius: 15px;
+            padding: 1.5rem;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .manuale-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-color: var(--color-sage);
+        }
+
+        .manuale-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .manuale-card h3 {
+            font-family: var(--font-serif);
+            font-size: 1.3rem;
+            color: var(--color-olive);
+            margin-bottom: 0.5rem;
+        }
+
+        .manuale-card .brand {
+            color: var(--color-terracotta);
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .manuale-card .model {
+            color: var(--color-warm-gray);
+            font-size: 0.85rem;
+        }
+
+        .manuale-card .pdf-badge {
+            margin-top: 1rem;
+            background: var(--color-terracotta);
+            color: white;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
         /* Responsive */
         @media (max-width: 600px) {
             .recipe {
@@ -396,6 +483,7 @@
         <ul>
             <li><a href="#merluzzo">🐟 Merluzzo Gratin</a></li>
             <li><a href="#consigli">💡 Consigli</a></li>
+            <li><a href="#manuali">📖 Manuali</a></li>
         </ul>
     </nav>
 
@@ -546,6 +634,62 @@
                 </table>
             </div>
         </article>
+
+        <!-- Manuali Elettrodomestici -->
+        <section class="manuali-section" id="manuali">
+            <h2>📖 Manuali Elettrodomestici</h2>
+            <p class="manuali-intro">Accedi rapidamente ai manuali dei tuoi elettrodomestici</p>
+            
+            <div class="manuali-grid">
+                <a href="_manuali/Severin-FR2445-Friggitrice.pdf" target="_blank" class="manuale-card">
+                    <span class="manuale-icon">🍟</span>
+                    <h3>Friggitrice ad Aria</h3>
+                    <span class="brand">Severin</span>
+                    <span class="model">FR 2445</span>
+                    <span class="pdf-badge">📄 PDF</span>
+                </a>
+
+                <a href="_manuali/MG23K3515CS_ET_DE68-04421C-01_IT.pdf" target="_blank" class="manuale-card">
+                    <span class="manuale-icon">📡</span>
+                    <h3>Microonde</h3>
+                    <span class="brand">Samsung</span>
+                    <span class="model">MG23K3515</span>
+                    <span class="pdf-badge">📄 PDF</span>
+                </a>
+
+                <a href="_manuali/Beko-BIE22101X-Forno.pdf" target="_blank" class="manuale-card">
+                    <span class="manuale-icon">🔥</span>
+                    <h3>Forno</h3>
+                    <span class="brand">Beko</span>
+                    <span class="model">BIE22101X</span>
+                    <span class="pdf-badge">📄 PDF</span>
+                </a>
+
+                <a href="_manuali/Beko-DIN35321-Lavastoviglie.pdf" target="_blank" class="manuale-card">
+                    <span class="manuale-icon">🍽️</span>
+                    <h3>Lavastoviglie</h3>
+                    <span class="brand">Beko</span>
+                    <span class="model">DIN35321</span>
+                    <span class="pdf-badge">📄 PDF</span>
+                </a>
+
+                <a href="_manuali/Kenwood-BLP31-Frullatore.pdf" target="_blank" class="manuale-card">
+                    <span class="manuale-icon">🥤</span>
+                    <h3>Frullatore</h3>
+                    <span class="brand">Kenwood</span>
+                    <span class="model">BLP31</span>
+                    <span class="pdf-badge">📄 PDF</span>
+                </a>
+
+                <a href="_manuali/Black&Decker-bxcj30e-Spremiagrumi.pdf" target="_blank" class="manuale-card">
+                    <span class="manuale-icon">🍊</span>
+                    <h3>Spremiagrumi</h3>
+                    <span class="brand">Black+Decker</span>
+                    <span class="model">BXCJ30E</span>
+                    <span class="pdf-badge">📄 PDF</span>
+                </a>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
